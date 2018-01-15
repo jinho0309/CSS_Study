@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+  a:link{/*방문X*/
+    color:black;
+  }
+  a:visited{/*방문O*,보안상의 이유로 속성이 제한적*/
+    color:red;
+  }
+  a:hover{/*마우수를 롤오버 했을 때*/
+    color:yellow;
+  }
+  a:active{/*마우스를 클릭하고 있을 때*/
+    color:green;
+  }
+  input:focus{/*포커스 될때 색깔, 가장 뒤에 놓는게 조음*/
+    background-color: red;
+  }
+
+
+  /*위에 있는 것이 우선순위가 높음(먼저 적용) active->hover가 실행되면 active를 hover가 덮음*/
+
+  </style>
+</head>
+<body>
+<a href="https://opentutorials.org">방문함</a>
+<a href="https://a.a">방문안함</a>
+<input type="text"/>
+</body>
+</html>
