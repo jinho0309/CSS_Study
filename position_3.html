@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #parent,
+        #other
+            {
+            border: 5px solid tomato;
+        }
+        #large{
+            height:10000px;
+            background-color: tomato;
+        }
+        #me {
+            background-color: black;
+            color: white;
+            position: fixed;
+            height: 30px;
+            top: 0;
+            width:100%;
+            text-align: center;
+     
+        }
+        body{
+            padding-top:30px;
+        }
+        /*
+        "fixed"는 스크롤과 상관없이 자신의 위치를 고수한다.
+absolute와 같이 부모element와 독립되기때문에 witdth와 height값을 다시 입력해주어야한다. 
+        */
+    </style>
+</head>
+
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>
+
+</body>
+</html>

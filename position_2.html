@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #parent,
+        #other,
+        #grand {
+            border: 5px solid tomato;
+        }
+
+        #grand {
+            position: relative;
+        }
+
+        #me {
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*"absolute"는 html태그 위치에서 부터 절대값으로 위치를 지정한다.
+단, 부모 element에서 position속성의 값이 static이 아니라면
+ 그 부모 element의 position 위치에서 부터의 절대값 위치로 지정된다.*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="other">other</div>
+    <div id="grand">
+        grand
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </div>
+
+</body>
+</html>

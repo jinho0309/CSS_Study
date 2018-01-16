@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html {
+            border: 1px solid gray;
+        }
+        div{
+            border:5px solid tomato;
+            margin:10px;
+        }
+        #me{
+            position:relative;/*기본값 static*/
+            left:100px; /*오른쪽으로 부터 100px떨어진(offset)*/
+            top:100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+</body>
+
+</html>

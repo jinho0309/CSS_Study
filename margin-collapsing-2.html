@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #parent {
+            border: 1px solid tomato;
+            margin-top:100px;
+        }
+
+        #child {
+            background-color: powderblue;
+            margin-top:50px;
+        }/*부모,자식 엘리먼트 사이에서 부모의 시각적 요소가 없어지면 부모,자식 마진 중 마진이 큰 쪽이 자식 마진처럼 사용된다. */
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child">
+            Hello world
+        </div>
+    </div>
+</body>
+
+</html>
